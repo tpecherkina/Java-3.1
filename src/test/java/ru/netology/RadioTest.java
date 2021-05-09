@@ -120,7 +120,7 @@ class RadioTest {
         Radio volna = new Radio();
         volna.setCurrentVolume(10);
         volna.volumeUp();
-        assertEquals(0, volna.getCurrentVolume());
+        assertEquals(10, volna.getCurrentVolume());
     }
 
     @Test
@@ -128,7 +128,7 @@ class RadioTest {
         Radio volna = new Radio();
         volna.setCurrentVolume(0);
         volna.volumeDown();
-        assertEquals(10, volna.getCurrentVolume());
+        assertEquals(0, volna.getCurrentVolume());
     }
 
     @Test
