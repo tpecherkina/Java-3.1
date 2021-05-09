@@ -54,23 +54,16 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
-
-    public void volumeUp() {
-        if (currentVolume < maxVolume) {
-            currentVolume++;
-        }
-        else {
-            currentVolume = minVolume;
-        }
+    
+       public void volumeUp() {
+        if (currentVolume == maxVolume) return;
+        soundVolume++;
     }
 
     public void volumeDown() {
-        if (currentVolume > minVolume) {
-            currentVolume--;
-        }
-        else {
-            currentVolume = maxVolume;
-        }
+        if (currentVolume == minVolume) return;
+        soundVolume--;
     }
+
 
 }
