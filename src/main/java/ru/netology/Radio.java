@@ -57,12 +57,12 @@ public class Radio {
     
        public void volumeUp() {
         if (currentVolume == maxVolume) return;
-        soundVolume++;
+        currentVolume++;
     }
 
     public void volumeDown() {
         if (currentVolume == minVolume) return;
-        soundVolume--;
+        currentVolume--;
     }
 
 
